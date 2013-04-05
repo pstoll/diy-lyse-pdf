@@ -12,7 +12,7 @@
 
 wget -k --mirror http://learnyousomeerlang.com/
 
-pushd learnyousomeeralang.com
+pushd learnyousomeerlang.com
 
 files=`cat contents | perl -ne 'm/class="local chapter"/ && m/href="([^"#]+)"/ && print "$1\n"'`
 
